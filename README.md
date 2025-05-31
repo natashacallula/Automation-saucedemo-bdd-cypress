@@ -51,4 +51,4 @@ All test scenarios are also documented in a spreadsheet
 ## 🎥 Testing Evidence 🎥
 **Check out the testing evidence video of the automated tests on YouTube:**
 
-[![Testing Evidence](https://img.youtube.com/vi/joFs1QI4HTU/0.jpg)](https://youtu.be/joFs1QI4HTU)
+[![Testing Evidence](https://img.youtube.com/vi/4IeKJO5gLAw/0.jpg)](https://youtu.be/4IeKJO5gLAw)
