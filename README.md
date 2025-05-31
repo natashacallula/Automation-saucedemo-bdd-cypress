@@ -28,26 +28,6 @@ The tests are written using the **BDD (Behavior-Driven Development)** approach w
 3. Run tests (interactive mode) : yarn cypress open
 4. Run tests (headless mode) : yarn cypress run
 
-## 🔧 Configuration (cypress.config.js) 🔧
-
-const { defineConfig } = require('cypress');
-const createBundler = require('@bahmutov/cypress-esbuild-preprocessor');
-const { addCucumberPreprocessorPlugin } = require('@badeball/cypress-cucumber-preprocessor');
-const { createEsbuildPlugin } = require('@badeball/cypress-cucumber-preprocessor/esbuild');
-
-module.exports = defineConfig({
-  e2e: {
-    specPattern:"**/*.feature",
-    async setupNodeEvents(on, config) {
-      await addCucumberPreprocessorPlugin(on, config);
-      on('file:preprocessor', createBundler({
-        plugins: [createEsbuildPlugin(config)],
-      }));
-      return config;
-    },
-  },
-});
-
 ## 🧪 Key Test Scenarios 🧪
 ✅ Authentication
 - Login with valid credentials.
